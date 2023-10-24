@@ -7,5 +7,32 @@
 
 import Foundation
 
-print("Hello, World!")
+class Transformer {
+    func run() {
+        print("Robot run")
+    }
+    func fire() {
+        print("Robot fire")
+    }
+    func transform() {
+        print("Transfotrm")
+    }
+}
+
+class Autobot: Transformer {
+    private var attackLevel: Int = 0
+    
+    init(attackLevel: Int) {
+        self.attackLevel = attackLevel
+    }
+    func fly() {
+        print("Fly")
+    }
+}
+
+class Decepticon: Transformer {
+    func jump() {
+        print("jump")
+    }
+}
 
